@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.box{
+			margin-bottom: 20px;
+		}
+		#url{
+			width: 250px;
+			height: 60px;
+			resize:vertical;
+		}
+	</style>
+	<script type="text/javascript" src="js/qrcode.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<div class="box">
+		<div>
+			<label for="url">URL:</label>
+		</div>
+		<textarea id="url"></textarea>
+		<div>
+			<input type="button" id="create" value="生成二维码">
+			<input type="button" id="reset" value="清空内容">
+		</div>
+	</div>
+	<div id="qrcode"></div>
+</body>
+</html>
